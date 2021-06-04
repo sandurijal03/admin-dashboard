@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Topbar.module.css';
-
-import { MdNotificationsNone, MdLanguage, MdSettings } from 'react-icons/md';
+import { NotificationsNone, Language, Settings } from '@material-ui/icons';
 
 const Topbar = () => {
   return (
@@ -12,15 +11,15 @@ const Topbar = () => {
         </div>
         <div className={styles.topRight}>
           <div className={styles.topIconContainer}>
-            <MdNotificationsNone />
+            <NotificationsNone />
             <span className={styles.topIconBadge}>2</span>
           </div>
           <div className={styles.topIconContainer}>
-            <MdLanguage />
+            <Language />
             <span className={styles.topIconBadge}>2</span>
           </div>
           <div className={styles.topIconContainer}>
-            <MdSettings />
+            <Settings />
           </div>
           <img
             src='https://upload.wikimedia.org/wikipedia/commons/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_(cropped).png'
