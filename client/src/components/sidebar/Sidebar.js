@@ -13,6 +13,7 @@ import {
   WorkOutline,
   Report,
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 import styles from './Sidebar.module.css';
 
@@ -42,7 +43,7 @@ const Sidebar = () => {
           <ul className={styles.sidebarList}>
             <li className={styles.sidebarListItem}>
               <PermIdentity className={styles.sidebarIcon} />
-              Users
+              <Link to='/users'>Users</Link>
             </li>
             <li className={styles.sidebarListItem}>
               <Storefront className={styles.sidebarIcon} />
