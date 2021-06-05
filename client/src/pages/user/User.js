@@ -7,6 +7,7 @@ import {
   PhoneAndroid,
   Publish,
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 import styles from './User.module.css';
 
@@ -15,7 +16,9 @@ const User = () => {
     <div className={styles.user}>
       <div className={styles.userTitleContainer}>
         <h1 className={styles.userTitle}>Edit User</h1>
-        <button className={styles.userAddButton}>Create</button>
+        <Link to='/newuser'>
+          <button className={styles.userAddButton}>Create</button>
+        </Link>
       </div>
       <div className={styles.userContainer}>
         <div className={styles.userShow}>
