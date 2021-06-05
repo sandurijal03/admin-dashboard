@@ -24,10 +24,12 @@ const Sidebar = () => {
         <div className={styles.sidebarMenu}>
           <h3 className={styles.sidebarTitle}>Dashboard</h3>
           <ul className={styles.sidebarList}>
-            <li className={styles.sidebarListItem}>
-              <LineStyle className={styles.sidebarIcon} />
-              Home
-            </li>
+            <Link to='/'>
+              <li className={styles.sidebarListItem}>
+                <LineStyle className={styles.sidebarIcon} />
+                Home
+              </li>
+            </Link>
             <li className={styles.sidebarListItem}>
               <Timeline className={styles.sidebarIcon} />
               Analytics
@@ -41,14 +43,18 @@ const Sidebar = () => {
         <div className={styles.sidebarMenu}>
           <h3 className={styles.sidebarTitle}>Quick Menu</h3>
           <ul className={styles.sidebarList}>
-            <li className={styles.sidebarListItem}>
-              <PermIdentity className={styles.sidebarIcon} />
-              <Link to='/users'>Users</Link>
-            </li>
-            <li className={styles.sidebarListItem}>
-              <Storefront className={styles.sidebarIcon} />
-              Products
-            </li>
+            <Link to='/users'>
+              <li className={styles.sidebarListItem}>
+                <PermIdentity className={styles.sidebarIcon} />
+                Users
+              </li>
+            </Link>
+            <Link to='/products'>
+              <li className={styles.sidebarListItem}>
+                <Storefront className={styles.sidebarIcon} />
+                Products
+              </li>
+            </Link>
             <li className={styles.sidebarListItem}>
               <AttachMoney className={styles.sidebarIcon} />
               Transactions
